@@ -1,0 +1,120 @@
+body {
+    background-image: url("/assets/img/shot.jpg");
+    background-size: cover;
+    margin: 14px;
+}
+
+@font-face {
+    font-family: "0xProto";
+    src: url("/assets/font/0xProto-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "0xProto";
+    src: url("/assets/font/0xProto-Italic.woff2") format("woff2");
+    font-size: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: "0xProto";
+    src: url("/assets/font/0xProto-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --base: #1e1e2e;
+    --yellow: #f9e2af;
+    --text: #cdd6f4;
+    --peach: #fab387;
+    --subtext: #a6adc8;
+    --maroon: #eba0ac;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+}
+
+.block {
+    display: flex;
+    min-width: 300px;
+    width: 100%;
+    max-width: 1000px;
+    background-color: var(--base);
+    border: 2px solid var(--yellow);
+}
+
+header > div {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+h1, h2, h3, p, a {
+    font-family: "0xProto";
+    line-height: 20px;
+}
+
+h1, p { color: var(--text); }
+a { color: var(--peach); }
+
+@keyframes pet {
+    from { cursor: grab; }
+    to { cursor: grabbing; }
+}
+
+#avatar {
+    max-width: 128px;
+    min-width: 110px;
+    object-fit: scale-down;
+    margin: 10px;
+    width: 30%;
+}
+
+#avatar:hover { animation: 0.5s linear pet infinite; }
+
+nav { margin-top: 10px; }
+
+nav > ul {
+    padding: 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+nav > ul > span {
+    flex-grow: 1;
+    padding-top: 5px;
+    flex-basis: 160px;
+}
+
+nav > ul > span > li {
+    margin: 0 auto 0;
+    width: fit-content;
+    list-style: "";
+}
+
+nav > ul > span > li:hover {
+    list-style: "> ";
+    color: var(--peach);
+}
+
+footer { margin-top: 16px; }
+
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+footer > div > a { text-decoration: none; }

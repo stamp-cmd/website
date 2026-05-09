@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  },
+  "type": "module",
+  "scripts": {
+    "serve": "eleventy --serve"
+  }
+}
