@@ -1,6 +1,11 @@
 {
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.5"
+    "@11ty/eleventy": "^3.1.5",
+    "wrangler": "^4.90.0"
   },
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "deploy": "npx eleventy && wrangler deploy",
+    "preview": "npx eleventy && wrangler dev"
+  }
 }
