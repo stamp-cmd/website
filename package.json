@@ -4,12 +4,15 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
     "@11ty/eleventy-plugin-webc": "^0.11.2",
-    "luxon": "^3.7.2"
+    "luxon": "^3.7.2",
+    "wrangler": "^4.91.0"
   },
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "deploy": "npx eleventy && wrangler deploy",
+    "preview": "npx eleventy && wrangler dev"
+  },
   "main": "eleventy.config.js",
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stamp-cmd/website.git"
