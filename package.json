@@ -7,10 +7,7 @@
     "luxon": "^3.7.2"
   },
   "type": "module",
-  "scripts": {
-    "reset": "rm -r _site",
-    "server": "npx @11ty/eleventy --serve"
-  },
+  "scripts": {},
   "main": "eleventy.config.js",
   "dependencies": {},
   "repository": {
