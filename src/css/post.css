@@ -1,0 +1,30 @@
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+h2, h3 {
+    color: var(--text);
+    text-indent: 10px;
+}
+
+p {
+    margin-left: 10px;
+    text-indent: 10px;
+}
+
+li {
+    color: var(--text);
+    list-style: "- ";
+}
+
+img {
+    max-width: 480px;
+    width: 80%;
+}
+
+#article > div {
+    width: 100%;
+    padding: 10px;
+}

@@ -1,0 +1,43 @@
+.painted {
+    text-indent: 20px;
+    color: #232634;
+    background-color: #e5c890;
+    padding: 7px 0 7px;
+    margin-top: 20px;
+}
+
+main > div > div { margin: 0 20px 0; }
+
+h2, h3, li {
+    color: var(--text);
+}
+
+li {
+    list-style: "- ";
+}
+
+h2 > a {
+    color: var(--subtext);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+.container > div > p {
+    text-indent: 20px;
+    margin-top: 0;
+}
+
+.container > img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 20px 20px 0
+}

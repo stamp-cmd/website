@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>{{ title }}</title>
+        <title>{{ title }} | STYRENE</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
-        <meta property="og:title" content="{{ title }}" />
-        <meta property="og:image" content="assets/img/avatar.png">
-        <link rel="stylesheet" href="css/base.css">
+        <meta name="generator" content="{{ eleventy.generator }}">
+        <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
+        <meta property="og:title" content="{{ title }} | STYRENE" />
+        <meta property="og:image" content="{{ full_url }}/assets/img/avatar.png">
+        <link rel="stylesheet" href="/css/base.css">
         {% if style -%}
         <link rel="stylesheet" href="{{ style }}">
         {% endif -%}
@@ -15,7 +16,7 @@
     <body>
         <div id="content">
             <header class="block">
-                <img id="avatar" src="assets/img/avatar.png" alt="pet him :3" title="pet him :3">
+                <img id="avatar" src="/assets/img/avatar.png" alt="pet him :3" title="pet him :3">
                 <div>
                     <h1>WELCOME !</h1>
                     <p>Enjoy your stay, V2.718</p>
@@ -47,35 +48,36 @@
             <footer class="block">
                 <div>
                     <a href="https://friendswithoutfaces.bandcamp.com/track/sunny-side-up-3" target="_blank">
-                        <img src="assets/img/buttons/fwf.gif" title="Friends without faces" alt="Car crash">
+                        <img src="/assets/img/buttons/fwf.gif" title="Friends without faces" alt="Car crash">
                     </a>
-                    <img src="assets/img/buttons/paws.gif" title="pawsome!" alt="made with MY OWN TWO PAWS">
+                    <img src="/assets/img/buttons/paws.gif" title="pawsome!" alt="made with MY OWN TWO PAWS">
                     <a href="https://petint.ddns.net/" target="_blank">
-                        <img src="assets/img/buttons/petint.gif" alt="petint now">
+                        <img src="/assets/img/buttons/petint.gif" alt="petint now">
                     </a>
                     <a href="https://maia.crimew.gay/" target="_blank">
-                        <img src="assets/img/buttons/maia.png" title="inspired first version of the website" alt="maia.crimew.gay">
+                        <img src="/assets/img/buttons/maia.png" title="inspired first version of the website" alt="maia.crimew.gay">
                     </a>
                     <a href="https://soatok.blog/" target="_blank">
-                        <img src="assets/img/buttons/soatok.png" title="my fav cryptografurs, very entertaining blog" alt="Dhole Moments">
+                        <img src="/assets/img/buttons/soatok.png" title="my fav cryptografurs, very entertaining blog" alt="Dhole Moments">
                     </a>
                     <a href="https://keeri.place/" target="_blank">
-                        <img src="assets/img/buttons/keeri.gif" title="very nice looking website" alt="keerifox">
+                        <img src="/assets/img/buttons/keeri.gif" title="very nice looking website" alt="keerifox">
                     </a>
                     <a href="https://dark.ski/">
-                        <img src="assets/img/buttons/dark.png" title="fellow tech protos" alt="dark">
+                        <img src="/assets/img/buttons/dark.png" title="fellow tech protos" alt="dark">
                     </a>
                     <a href="https://resonite.com/">
-                        <img src="assets/img/buttons/resonite.png" title="support pdf out of the box, hell yeah" alt="resonite">
+                        <img src="/assets/img/buttons/resonite.png" title="support pdf out of the box, hell yeah" alt="resonite">
                     </a>
                     <a href="https://code.visualstudio.com/">
-                        <img src="assets/img/buttons/vscode.png" title="i prefer vscode for web dev" alt="made with visual studio code">
+                        <img src="/assets/img/buttons/vscode.png" title="i prefer vscode for web dev" alt="made with visual studio code">
                     </a>
                     <a href="https://beeps.website">
-                        <img src="assets/img/buttons/beeps.gif" title="beeps" alt="beeps">
+                        <img src="/assets/img/buttons/beeps.gif" title="beeps" alt="beeps">
                     </a>
                 </div>
             </footer>
+            <u id="uwu">w</u>
         </div>
     </body>
     {% if code -%}

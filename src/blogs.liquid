@@ -1,0 +1,34 @@
+---
+title: Blogs
+layout: base.liquid
+style: /css/blogs.css
+---
+
+<main class="standard">
+    <div class="block">
+        {% assign siz = collections.post.size - 1 %}
+        <div id="wrap">
+            <h1>Blogs</h1>
+            {% for post in collections.post %}
+                <div class="post">
+                    <div>
+                        <h3 id="title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                        <div><time datetime="{{ post.date | machineDate }}">{{ post.date | postDate }}</time></div>
+                    </div>
+                    <p id="desc">{{ post.data.desc }}</p>
+                    <ul>
+                        {% for tag in post.data.tags %}
+                            {% if tag != "post" %}
+                                <li><u>#{{ tag }}</u></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                    <!--{% increment len %}-->
+                    {% if len < siz %}
+                        <hr>
+                    {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</main>

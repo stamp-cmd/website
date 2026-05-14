@@ -1,0 +1,21 @@
+main > div > div {
+    margin: 0 20px 0;
+    width: 100%;
+}
+
+main > div > div > h2 { color: var(--text); }
+main > div > div > p { text-indent: 20px; }
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    filter: invert() brightness(88%) hue-rotate(226deg) saturate(64%);
+}
+
+#gm { background-image: url("/assets/img/icons/envelope-fill.svg"); }
+#bsky { background-image: url("/assets/img/icons/bluesky.svg"); }
+#discord { background-image: url("/assets/img/icons/discord.svg"); }
+#github { background-image: url("/assets/img/icons/github.svg"); }

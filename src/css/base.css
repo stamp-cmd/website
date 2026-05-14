@@ -1,5 +1,5 @@
 body {
-    background-image: url("/assets/img/shot.jpg");
+    background-image: url("/assets/img/dieshot90.jpg");
     background-size: cover;
     margin: 14px;
 }
@@ -9,6 +9,7 @@ body {
     src: url("/assets/font/0xProto-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -16,6 +17,7 @@ body {
     src: url("/assets/font/0xProto-Italic.woff2") format("woff2");
     font-size: normal;
     font-style: oblique;
+    font-display: swap;
 }
 
 @font-face {
@@ -23,6 +25,7 @@ body {
     src: url("/assets/font/0xProto-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 :root {
@@ -57,7 +60,7 @@ header > div {
     width: 100%;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, h4, p, a, i, li {
     font-family: "0xProto";
     line-height: 20px;
 }
@@ -80,7 +83,7 @@ a { color: var(--peach); }
 
 #avatar:hover { animation: 0.5s linear pet infinite; }
 
-nav { margin-top: 10px; }
+nav { margin: 10px 0 10px; }
 
 nav > ul {
     padding: 0 20px 0;
@@ -106,6 +109,13 @@ nav > ul > span > li:hover {
     color: var(--peach);
 }
 
+main.standard {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 footer { margin-top: 16px; }
 
 footer > div {
@@ -118,3 +128,8 @@ footer > div {
 }
 
 footer > div > a { text-decoration: none; }
+
+footer > div > a > img { width: 88px; height: 31px; }
+footer > div > img { width: 88px; height: 31px; }
+
+#uwu { color: var(--text); }

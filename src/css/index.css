@@ -1,7 +1,7 @@
 #group {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 10px;
     /* Adjust for border */
     width: calc(100% + 4px);
     max-width: 1002px;

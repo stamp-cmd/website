@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "VCR OSD Mono";
+    src: url("/assets/font/VCR-Mono.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    align-content: center;
+    background-image: url("/assets/img/miss.png");
+}
+
+video {
+    margin: 20px 0 20px;
+    width: 100%;
+}
+
+div {
+    max-width: 720px;
+    min-width: 320px;
+    width: 80%;
+}
+
+span { color: #89b4fa; }
+
+div > h1, p {
+    font-family: "VCR OSD Mono";
+    color: #cdd6f4;
+    text-align: center;
+}
+
+a { color: #fab387; }
+p { font-size: 1.25rem; }
+div > h1 { font-size: 2.5rem; }

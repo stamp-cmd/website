@@ -1,6 +1,21 @@
 {
+  "name": "website",
+  "version": "1.0.0",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.5"
+    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "luxon": "^3.7.2"
   },
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "reset": "rm -r _site",
+    "server": "npx @11ty/eleventy --serve"
+  },
+  "main": "eleventy.config.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stamp-cmd/website.git"
+  },
+  "license": "ISC"
 }

@@ -1,0 +1,6 @@
+<h2><a :href="link" @text="name"></a></h2>
+<div class="container">
+    <slot name="cover"></slot>
+    <slot name="desc"></slot>
+    <slot name="track"></slot>
+</div>
