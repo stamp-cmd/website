@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="{{ eleventy.generator }}">
         <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
-        <meta property="og:title" content="{{ title }} | STYRENE" />
+        <meta property="og:title" content="{{ title }} | STYRENE">
         <meta property="og:image" content="{{ full_url }}/assets/img/avatar.png">
+        {% if desc %}<meta property="og:description" content="{{ desc }}">{% endif %}
         <link rel="stylesheet" href="/css/base.css">
-        {% if style -%}
-        <link rel="stylesheet" href="{{ style }}">
-        {% endif -%}
+        {% if style %}<link rel="stylesheet" href="{{ style }}">{% endif %}
+
     </head>
     <body>
         <div id="content">
@@ -23,64 +23,43 @@
                 </div>
             </header>
             <nav class="block">
+                <!-- sowwy for double nested list -->
                 <ul>
-                    <span>
-                        <li><a href="/">[ HOME ]</a></li>
-                    </span>
-                    <span>
-                        <li><a href="/blogs">[ BLOGS ]</a></li>
-                    </span>
-                    <span>
-                        <li><a href="/projects">[ PROJECTS ]</a></li>
-                    </span>
-                    <span>
-                        <li><a href="/media">[ MEDIA ]</a></li>
-                    </span>
-                    <span>
-                        <li><a href="/contact">[ CONTACT ]</a></li>
-                    </span>
-                    <span>
-                        <li><a href="/random">[ /dev/random ]</a></li>
-                    </span>
+                    {% renderTemplate "webc" %}
+                        <nav-link href="/" name="HOME"></nav-link>
+                        <nav-link href="/blogs" name="BLOGS"></nav-link>
+                        <nav-link href="/projects" name="PROJECTS"></nav-link>
+                        <nav-link href="/media" name="MEDIA"></nav-link>
+                        <nav-link href="/contact" name="CONTACT"></nav-link>
+                        <nav-link href="/random" name="/dev/random"></nav-link>
+                    {% endrenderTemplate %}
                 </ul>
             </nav>
             {{ content }}
             <footer class="block">
                 <div>
-                    <a href="https://friendswithoutfaces.bandcamp.com/track/sunny-side-up-3" target="_blank">
-                        <img src="/assets/img/buttons/fwf.gif" title="Friends without faces" alt="Car crash">
-                    </a>
-                    <img src="/assets/img/buttons/paws.gif" title="pawsome!" alt="made with MY OWN TWO PAWS">
-                    <a href="https://petint.ddns.net/" target="_blank">
-                        <img src="/assets/img/buttons/petint.gif" alt="petint now">
-                    </a>
-                    <a href="https://maia.crimew.gay/" target="_blank">
-                        <img src="/assets/img/buttons/maia.png" title="inspired first version of the website" alt="maia.crimew.gay">
-                    </a>
-                    <a href="https://soatok.blog/" target="_blank">
-                        <img src="/assets/img/buttons/soatok.png" title="my fav cryptografurs, very entertaining blog" alt="Dhole Moments">
-                    </a>
-                    <a href="https://keeri.place/" target="_blank">
-                        <img src="/assets/img/buttons/keeri.gif" title="very nice looking website" alt="keerifox">
-                    </a>
-                    <a href="https://dark.ski/">
-                        <img src="/assets/img/buttons/dark.png" title="fellow tech protos" alt="dark">
-                    </a>
-                    <a href="https://resonite.com/">
-                        <img src="/assets/img/buttons/resonite.png" title="support pdf out of the box, hell yeah" alt="resonite">
-                    </a>
-                    <a href="https://code.visualstudio.com/">
-                        <img src="/assets/img/buttons/vscode.png" title="i prefer vscode for web dev" alt="made with visual studio code">
-                    </a>
-                    <a href="https://beeps.website">
-                        <img src="/assets/img/buttons/beeps.gif" title="beeps" alt="beeps">
-                    </a>
+                    {% renderTemplate "webc" %}
+                        <badge src="/assets/img/buttons/fwf.gif" title="Friends without faces" alt="Car crash"
+                        href="https://friendswithoutfaces.bandcamp.com/track/sunny-side-up-3/"></badge>
+                        <badge src="/assets/img/buttons/paws.gif" title="pawsome!" alt="made with MY OWN TWO PAWS"></badge>
+                        <badge src="/assets/img/buttons/petint.gif" alt="petint now!" title="petint now" href="https://petint.ddns.net/"></badge>
+                        <badge src="/assets/img/buttons/maia.png" title="inspired first version of this website" alt="maia.crimew.gay" href="https://maia.crimew.gay/"></badge>
+                        <badge src="/assets/img/buttons/soatok.png" title="my fav cryptografur, very entertaining blog" alt="Dhole Moments" href="https://soatok.blog/"></badge>
+                        <badge src="/assets/img/buttons/keeri.gif" title="very nice looking website" alt="keerifox" href="https://keeri.place/"></badge>
+                        <badge src="/assets/img/buttons/dark.png" title="fellow tech protos" alt="dark" href="https://dark.ski/"></badge>
+                        <badge src="/assets/img/buttons/resonite.png" title="support pdf out of the box, hell yeah" alt="resonite" href="https://resonite.com/"></badge>
+                        <badge src="/assets/img/buttons/vscode.png" title="i perfer vscode for web dev" alt="MADE WITH VISUAL STUDIO CODE"></badge>
+                        <badge src="/assets/img/buttons/beeps.gif" title="beeps" alt="beeps" href="https://beeps.website/"></badge>
+                        <badge src="/assets/img/buttons/pg.gif" title="PG for now" alt="Web PG" href="http://www.mabsland.com/"></badge>
+                        <badge src="/assets/img/buttons/html5.png" title="HTML5 Validated!" alt="W3C HTML5"></badge>
+                        <badge src="/assets/img/buttons/hiijax.gif" title="very nice website, gave me starting point for this one" alt="HiiJax" href="https://hiijax.net/"></badge>
+                    {% endrenderTemplate %}
                 </div>
             </footer>
             <u id="uwu">w</u>
         </div>
+        {% if code %}
+        <script src="{{ code }}"></script>
+        {% endif %}
     </body>
-    {% if code -%}
-    <script src="{{ code }}"></script>
-    {% endif -%}
 </html>

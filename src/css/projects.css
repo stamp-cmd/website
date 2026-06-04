@@ -1,0 +1,29 @@
+main {
+    align-items: center;
+    flex-direction: column;
+}
+
+#proj-desc { margin-bottom: 20px; }
+
+#proj-desc > h1 {
+    text-indent: 20px;
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: var(--yellow);
+}
+
+.render { margin: 10px 20px 0; }
+
+.render > h1 {
+    overflow-wrap: break-word;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.render > hr { margin: 20px 0 20px; }
+
+li {
+    color: var(--text);
+    list-style: "- ";
+}

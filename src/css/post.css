@@ -1,30 +1,56 @@
+@import url("highlight.css");
+
+body {
+    background-size: contain; /* ? weird bug */
+}
+
 h1 {
     width: 100%;
     text-align: center;
     font-size: 1.75rem;
+    line-height: 1.75rem;
 }
 
-h2, h3 {
+h2, h3, h4 {
     color: var(--text);
     text-indent: 10px;
 }
 
-p {
-    margin-left: 10px;
-    text-indent: 10px;
-}
+p { margin-left: 10px; }
 
 li {
     color: var(--text);
     list-style: "- ";
 }
 
-img {
-    max-width: 480px;
-    width: 80%;
+pre {
+    border: 2px solid #6c7086;
+    font-size: 1rem;
+    padding: 5px;
+    margin-left: 5px;
 }
+
+img {
+    /* https://stackoverflow.com/a/47288901 */
+    display: block;
+    margin: 0 auto 0;
+    max-width: 480px;
+    width: 80%;    
+}
+
+li > p > a { word-break: break-all; }
 
 #article > div {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
+}
+
+p > code {
+    padding: 0.25rem;
+    font-size: 0.8rem;
+    background-color: #11111b;
+}
+
+pre > code {
+    white-space: pre-wrap;
 }

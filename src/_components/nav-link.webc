@@ -1,0 +1,5 @@
+<li class="nav-link">
+    <ul>
+        <li><a :href="href" @html="'[ ' + name + ' ]'"></a></li>
+    </ul>
+</li>

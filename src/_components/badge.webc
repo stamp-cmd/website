@@ -1,0 +1,5 @@
+<a :href="href" webc:if="href != undefined" target="_blank" class="badge">
+    <img :src="src" :alt="alt" :title="title">
+</a>
+
+<img :src="src" :alt="alt" :title="title" webc:if="href == undefined" class="badge">

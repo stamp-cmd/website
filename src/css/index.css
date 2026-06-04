@@ -58,7 +58,7 @@ article > p, #desc { text-indent: 20px; }
 
 time > i {
     font-family: '0xProto';
-    font-style: oblique 25deg;
+    font-style: oblique 30deg;
 }
 
 .painted {
@@ -78,7 +78,7 @@ time > i {
 
 #message {
     z-index: -1;
-    position: absolute;
+    position: fixed;
     right: 5px;
     bottom: 5px;
     writing-mode: vertical-rl;
@@ -99,9 +99,13 @@ time > i {
 #changelog {
     overflow-y: scroll;
     max-height: 240px;
+    margin-bottom: 20px;
 }
 
 #changelog > p, #changelog > h4 { color: var(--subtext); }
+#changelog > hr {
+    border: dashed 2px;
+}
 #sidebar > div > h3 {
     text-align: center;
     color: var(--text);

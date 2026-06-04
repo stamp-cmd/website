@@ -92,19 +92,21 @@ nav > ul {
     width: 100%;
 }
 
-nav > ul > span {
+/* Valid HTML5 but at what cost */
+.nav-link {
     flex-grow: 1;
-    padding-top: 5px;
     flex-basis: 160px;
+    margin-top: 5px;
+    justify-content: center;
+    list-style-type: none;
 }
-
-nav > ul > span > li {
-    margin: 0 auto 0;
-    width: fit-content;
-    list-style: "";
+.nav-link > ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
 }
-
-nav > ul > span > li:hover {
+.nav-link > ul > li { list-style-type: none; }
+.nav-link > ul > li:hover {
     list-style: "> ";
     color: var(--peach);
 }
@@ -131,5 +133,8 @@ footer > div > a { text-decoration: none; }
 
 footer > div > a > img { width: 88px; height: 31px; }
 footer > div > img { width: 88px; height: 31px; }
+
+/* conflict with blog oops */
+.badge { margin: 0; }
 
 #uwu { color: var(--text); }
