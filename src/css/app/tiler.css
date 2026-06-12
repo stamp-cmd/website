@@ -1,0 +1,47 @@
+#width, #height { width: 80px; }
+
+section { width: 95%; overflow: scroll;  }
+
+#grid > tr > td > input {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}
+
+#box > div {
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    border: 2px solid var(--peach);
+    border-radius: 4px;
+    background-color: var(--base);
+    color: var(--text);
+    font-family: "0xProto";
+    margin: 10px;
+}
+
+button:hover { color: var(--subtext); }
+
+label { color: var(--text); }
+
+input {
+    color: var(--text);
+    font-family: "0xProto";
+    background-color: var(--base);
+    border: 1px solid var(--peach);
+}
+
+#grid { border-collapse: collapse; }
+
+#grid > tr > td > input:invalid {
+    color: var(--maroon);
+    border: 2px solid var(--maroon);
+}
+
+#grid > tr > td > input:valid {
+    color: var(--text);
+    border: 1px solid var(--text);
+}

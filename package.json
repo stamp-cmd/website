@@ -8,13 +8,12 @@
     "luxon": "^3.7.2",
     "markdown-it": "^14.1.1",
     "markdown-it-abbr": "^2.0.0",
-    "markdown-it-footnote": "^4.0.0",
-    "wrangler": "^4.91.0"
+    "markdown-it-footnote": "^4.0.0"
   },
   "type": "module",
   "scripts": {
-    "deploy": "npx eleventy && wrangler deploy",
-    "preview": "npx eleventy && wrangler dev"
+    "serve": "npx eleventy --serve",
+    "reset": "rm -r _site"
   },
   "main": "eleventy.config.js",
   "repository": {

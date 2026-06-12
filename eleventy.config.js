@@ -20,6 +20,8 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/js");
     eleventyConfig.addWatchTarget("src/js");
 
+    eleventyConfig.ignores.add("src/proj.md");
+
     // in-case of neocities deployment
     eleventyConfig.addGlobalData("vid_dir", "https://github.com/stamp-cmd/website/raw/refs/heads/main/assets/vid/"); // use github as video storage
     eleventyConfig.addGlobalData("full_url", "https://raw.githubusercontent.com/stamp-cmd/website/refs/heads/main/");
