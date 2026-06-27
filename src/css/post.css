@@ -54,3 +54,15 @@ p > code {
 pre > code {
     white-space: pre-wrap;
 }
+
+table {
+    border-collapse: collapse;
+    border: 2px solid var(--text);
+}
+
+td, th {
+    color: var(--text);
+    padding: 5px 10px 5px;
+    border: 2px solid var(--text);
+    font-family: '0xProto';
+}

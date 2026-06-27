@@ -110,3 +110,12 @@ time > i {
     text-align: center;
     color: var(--text);
 }
+
+#tech {
+    margin: -10px 0 10px;
+    color: var(--text);
+}
+
+#tech > li {
+    list-style: "- ";
+}

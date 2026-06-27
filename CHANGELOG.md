@@ -34,3 +34,11 @@ Added 2nd blog, which is an extended rewrite of the first write-up on my first w
 Debating if I should add music player on empty space. Yes, /dev/random will be 404 on this build. My 404 is kinda nice.
 
 ---
+
+2026-06-17
+#### Woaw more stuff!
+Added CTF blog, and edited main page.
+
+I'm taking this slot to say: Take care <3
+
+---

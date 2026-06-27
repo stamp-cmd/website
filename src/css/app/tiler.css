@@ -45,3 +45,5 @@ input {
     color: var(--text);
     border: 1px solid var(--text);
 }
+
+label { font-family: "0xProto"; }
