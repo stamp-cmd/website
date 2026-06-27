@@ -3,6 +3,7 @@ title: "Various CTF Writeup"
 desc: "Various CTF Lab writeup from the cybersec club, by usually yours truly."
 date: "Last Modified"
 tags: ["post", "cybersec", "writeup", "ctf", "club"]
+permalink: "/blog/ctf-writeup.html"
 ---
 
 # Various CTF Writeup
