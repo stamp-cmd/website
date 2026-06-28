@@ -117,5 +117,6 @@ time > i {
 }
 
 #tech > li {
+    color: var(--text);
     list-style: "- ";
 }
