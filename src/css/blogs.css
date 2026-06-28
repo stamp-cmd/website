@@ -26,14 +26,14 @@ main > .block { padding: 10px 0 10px; }
     list-style: none;
 }
 
-#desc { margin: 10px 0 10px; }
+.desc { margin: 10px 0 10px; }
 
 .post > div {
     display: flex;
     flex-wrap: wrap;
 }
 
-#title {
+.title {
     font-size: 1.25rem;
     margin: 0 0 10px;
     max-width: 800px;

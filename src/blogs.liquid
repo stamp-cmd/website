@@ -12,10 +12,10 @@ style: /css/blogs.css
             {% for post in collections.post reversed %}
                 <div class="post">
                     <div>
-                        <h2 id="title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+                        <h2 class="title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
                         <div><time datetime="{{ post.date | machineDate }}">{{ post.date | postDate }}</time></div>
                     </div>
-                    <p id="desc">{{ post.data.desc }}</p>
+                    <p class="desc">{{ post.data.desc }}</p>
                     <ul>
                         {% for tag in post.data.tags %}
                             {% if tag != "post" %}

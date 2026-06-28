@@ -13,6 +13,7 @@
   "type": "module",
   "scripts": {
     "serve": "npx eleventy --serve",
+    "build": "npx eleventy",
     "reset": "rm -r _site"
   },
   "main": "eleventy.config.js",
