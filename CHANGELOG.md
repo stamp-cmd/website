@@ -42,3 +42,12 @@ Added CTF blog, and edited main page.
 I'm taking this slot to say: Take care <3
 
 ---
+
+2026-07-13
+#### Exam, exam, and EDIT!
+Add image modal view. Arts at media section. Code snippet do not break responsive design. This is the 6th changelog entry, so it's probably not going to
+be abandoned soon.
+
+Probably will try [Neocities CLI](https://neocities.org/cli). See you soon!
+
+---

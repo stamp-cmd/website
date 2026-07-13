@@ -5,6 +5,7 @@ import { DateTime } from "luxon";
 import markdownit from "markdown-it";
 import markfootnote from "markdown-it-footnote";
 import markabbrev from "markdown-it-abbr";
+import markanchor from "markdown-it-anchor";
 
 export default async function(eleventyConfig) {
     eleventyConfig.setInputDirectory("src");
@@ -41,8 +42,11 @@ export default async function(eleventyConfig) {
     let md = markdownit();
     md.use(markfootnote);
     md.use(markabbrev);
+    md.use(markanchor);
     md.renderer.rules.link_open = (token, idx, options, env, self) => {
-        token[idx].attrSet("target", "_blank");
+        if (token[idx].attrGet("href")[0] != '#') {
+            token[idx].attrSet("target", "_blank");
+        }
         return self.renderToken(token, idx, options);
     }
 

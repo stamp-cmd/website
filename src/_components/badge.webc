@@ -1,5 +1,5 @@
 <a :href="href" webc:if="href != undefined" target="_blank" class="badge">
-    <img :src="src" :alt="alt" :title="title">
+    <img :src="src" :alt="alt" :title="title" class="no-modal">
 </a>
 
-<img :src="src" :alt="alt" :title="title" webc:if="href == undefined" class="badge">
+<img :src="src" :alt="alt" :title="title" webc:if="href == undefined" class="badge no-modal">

@@ -24,10 +24,12 @@ li {
 }
 
 pre {
+    width: clamp(250px, calc(100vw - 95px), 935px);
+    overflow-x: scroll;
     border: 2px solid #6c7086;
     font-size: 1rem;
     padding: 5px;
-    margin-left: 5px;
+    margin: 5px;
 }
 
 img {
@@ -49,10 +51,6 @@ p > code {
     padding: 0.25rem;
     font-size: 0.8rem;
     background-color: #11111b;
-}
-
-pre > code {
-    white-space: pre-wrap;
 }
 
 table {

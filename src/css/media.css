@@ -41,3 +41,20 @@ h2 > a {
     max-height: 200px;
     margin: 0 20px 20px 0
 }
+
+#gallery {
+    display: grid;
+    width: 100%;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
+    margin-bottom: 20px;
+}
+
+#gallery > img {
+    border: 2px solid #94e2d5;
+    width: 100%;
+}
+
+#gallery > img:hover {
+    cursor: help;
+}

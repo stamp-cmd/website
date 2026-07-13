@@ -138,4 +138,39 @@ footer > div > img { width: 88px; height: 31px; }
 /* conflict with blog oops */
 .badge { margin: 0; }
 
+#img-modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(24, 24, 37, 75%);
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+#img-modal > img {
+    width: fit-content;
+    height: fit-content;
+}
+
+#img-modal > button {
+    font-family: "0xProto";
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--maroon);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#img-modal > button:focus, #img-modal > button:hover {
+    text-decoration: underline;
+}
+
 #uwu { color: var(--text); }
