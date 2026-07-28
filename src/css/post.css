@@ -51,6 +51,7 @@ p > code {
     padding: 0.25rem;
     font-size: 0.8rem;
     background-color: #11111b;
+    overflow-wrap: anywhere;
 }
 
 table {
@@ -64,3 +65,5 @@ td, th {
     border: 2px solid var(--text);
     font-family: '0xProto';
 }
+
+p > strong { overflow-wrap: anywhere; }

@@ -39,6 +39,11 @@ main > .block { padding: 10px 0 10px; }
     max-width: 800px;
     flex-basis: fit-content;
 }
+
+.title > a {
+    line-height: 1.5rem;
+}
+
 .post > div > div {
     text-align: right;
     flex-grow: 1;

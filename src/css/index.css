@@ -83,7 +83,7 @@ time > i {
     bottom: 5px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    letter-spacing: 5px;
+    letter-spacing: 0.25rem;
 }
 
 #clock > h3 { color: var(--text); }

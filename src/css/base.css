@@ -63,7 +63,7 @@ header > div {
 
 h1, h2, h3, h4, p, a, i, li {
     font-family: "0xProto";
-    line-height: 20px;
+    line-height: 1.25rem;
 }
 
 h1, p { color: var(--text); }
@@ -159,7 +159,7 @@ footer > div > img { width: 88px; height: 31px; }
 
 #img-modal > button {
     font-family: "0xProto";
-    font-size: 20px;
+    font-size: 1.25rem;
     outline: none;
     border: none;
     background-color: transparent;
@@ -173,4 +173,7 @@ footer > div > img { width: 88px; height: 31px; }
     text-decoration: underline;
 }
 
-#uwu { color: var(--text); }
+#uwu {
+    font-family: "0xProto";
+    color: var(--text);
+}
