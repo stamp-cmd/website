@@ -168,6 +168,6 @@ I'll probably keep this updated up to 10 of them. Starting to become less sparse
 [^6]: <https://x.com/kimmix00/status/1717981851267338535>
 [^7]: Author comment <https://www.facebook.com/photo.php?fbid=810328868701665>
 [^8]: Like a lot of technical details on Github <https://github.com/Kimmix/KMMX-Fursuit>
-[^9]: https://www.facebook.com/photo/?fbid=122107744173334185&set=ecnf.61590025551311
+[^9]: <https://www.facebook.com/photo/?fbid=122107744173334185&set=ecnf.61590025551311>
 [^10]: Author comment <https://www.facebook.com/photo/?fbid=122120239155101064>
 [^11]: <https://www.facebook.com/photo/?fbid=122113427943101064>
