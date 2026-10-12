@@ -102,9 +102,8 @@ time > i {
 }
 
 #changelog > p, #changelog > h4 { color: var(--subtext); }
-#changelog > hr {
-    border: dashed 2px;
-}
+#changelog > hr { border: dashed 2px; }
+#changelog > ul > li { color: var(--subtext); }
 #sidebar > div > h3 {
     text-align: center;
     color: var(--text);
@@ -115,7 +114,4 @@ time > i {
     color: var(--text);
 }
 
-#tech > li {
-    color: var(--text);
-    list-style: "- ";
-}
+li { list-style: "- "; }

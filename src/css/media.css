@@ -58,3 +58,7 @@ h2 > a {
 #gallery > img:hover {
     cursor: help;
 }
+
+#lastfm {
+    background-image: url("/assets/img/icons/lastfm.svg");
+}

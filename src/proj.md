@@ -15,7 +15,7 @@ Github Repo: [ProtoTracerBinFBXConverter](https://github.com/stamp-cmd/ProtoTrac
 
 # EV3 Direct Command library
 
-I made a terrible finacial decision to buy 2 [EV3](https://en.wikipedia.org/wiki/Lego_Mindstorms_EV3) set (31313, 45544). So now I have to make up for it.
+I made a terrible financial decision to buy 2 [EV3](https://en.wikipedia.org/wiki/Lego_Mindstorms_EV3) set (31313, 45544). So now I have to make up for it.
 
 EV3-DC is low-level library to generate Direct Commands packet for EV3. Direct Commands is also fun to implement.
 
@@ -28,7 +28,7 @@ It can
 
 Since it's low-level you can implement anything. It's like programming with C rather than assembly.
 
-Github Repo: [EV3-DC](https://github.com/stamp-cmd/EV3-DC)
+GitHub Repo: [EV3-DC](https://github.com/stamp-cmd/EV3-DC)
 
 ---
 

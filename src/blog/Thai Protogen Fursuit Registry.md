@@ -1,12 +1,12 @@
 ---
 title: "Thai Protogen Fursuit Registry"
-desc: "I wanna document lists of electronic protogen fursuits in Thailand, since those are quite rare."
+desc: "I want to document lists of electronic protogen fursuits in Thailand, since those are quite rare."
 date: "Last Modified"
 tags: ["post", "protogen", "thailand", "registry"]
 permalink: "/blog/{{ title | slugify }}.html"
 ---
 
-# Thai Protogen Fursuit Registry
+# Thai Protogen Fursuits Registry
 
 ---
 
@@ -21,8 +21,8 @@ Making "standard" protogen head is quite difficult. Notably the visor. Usually m
 *[PETG]: PolyEthylene Terephthalate Glycol
 
  - PETG sheets are hard to find in Thailand (no import), the only source I found so far is from [RS-online](https://th.rs-online.com/web/p/plastic-sheets/3346450).
- - PolyCarbonate is highly-hygroscopic, causing bubbles to form in finished result. So drying sheet is requried.
- - Acrylic is fragile when streched thin, and PVC release toxic off-gas.
+ - PolyCarbonate is highly-hygroscopic, causing bubbles to form in finished result. So drying sheet is required.
+ - Acrylic is fragile when stretched thin, and PVC release toxic off-gas.
 
 And also not everyone have access to vacuum forming machine, less than 3D printers. So usual method is to DIY.
 
@@ -45,7 +45,7 @@ I don't know which material they used to make the visor, unfortunately.
 MandoArtstudio has protogen guide and references, which you can check out
 [here](https://drive.google.com/drive/folders/1LM8m-aAwUzzANcs7_JfLZA5rJwNvIhM1).
 
-*there's Facebook, Xitter, links here. Also fursona linked to respective owner.*
+*there's Facebook, Xitter, links here. Also, fursona linked to respective owner.*
 
 ## Protogens I've found so far
 Last updated: {{ page.date | postDate }}
@@ -60,9 +60,9 @@ Built by [MangMuang Elektronik](https://x.com/MangMuang) (electronics), and [Yuz
 *[FPGA]: Field-programmable gate array
 *[OTA]: Over-the-air
 
- - Base: looks like M16 MK3
+ - Base: probably M16 MK3
  - Visor style: probably M16 MK3 default
- - Display: HUB75 display, with side cheekplate addressable LED
+ - Display: HUB75 display, with side cheek plate addressable LED
  - Electronics: ESP32 & Intel Stratix FPGA! With audio processing, Wifi & Bluetooth connectivity, and OTA update. Custom ([Protogen Smart Core](https://github.com/MangMuang/ProtogenSmartCore/))software[^2].
 
 ### [TypeZeroOne](https://www.facebook.com/typezeroone)
@@ -76,8 +76,8 @@ Built by TypeZeroOne (base & electronics at least)
  - Display: 8x8 LED Matrix (MAX7218), sometimes two colors
  - Electronic: possibly Arduino pro mini board[^4], software unknown.
 
-#### NOT A SPONSORSHIP!
-TypeZeroOne is considering selling protogen kit on Facebook. *(TypeZeroOne may have done commission before, but I can't confidentally prove it)*
+> #### NOT A SPONSORSHIP!
+> TypeZeroOne is considering selling protogen kit on Facebook. *(TypeZeroOne may have done commission before, but I can't confidently prove it)*
 
 ### [Sanyo](https://www.facebook.com/prasertporn.changjai)
 ![Sanyo](/assets/img/content/protogen_fursuits/sanyo.jpg)
@@ -85,7 +85,7 @@ TypeZeroOne is considering selling protogen kit on Facebook. *(TypeZeroOne may h
 Probably M16 MK3, Not much to comment on construction.
 
 Built by ??
- - Base: looks like M16 MK3
+ - Base: probably M16 MK3
  - Visor style: looks like M16 MK3 default
  - Display: 8x8 LED Matrix (MAX7219) single color
  - Electronic: Unknown, software unknown
@@ -96,10 +96,10 @@ Built by ??
 Currently un-visored protogen, custom PCB and software!
 
 Built by [Guest](https://x.com/GuestDaProtogen).
- - Base: looks like M16 MK3
- - Visor style: doesn't exist yet, probably will be M16 MK3 default
+ - Base: probably M16 MK3
+ - Visor style: ~~doesn't exist yet, probably will be M16 MK3 default~~ Visor is currently made of thin tinted plastic sheet *(probably)* [^9]
  - Display: 8x8 LED Matrix (MAX7219) single color, with side cheek LEDs
- - Electronic: ESP32, custom PCB[^5] with internal Oled display, custom software.
+ - Electronic: ESP32, custom PCB[^5] with internal OLED display, custom software.
 
 ### [Theodor](https://www.facebook.com/thn.phl.sud.swath)
 ![Theodor](/assets/img/content/protogen_fursuits/theodor.jpg)
@@ -117,8 +117,8 @@ Built by Theodor
 
 Probably M16 MK3, Not much to comment on construction
 
-Built by ??
- - Base: looks like M16 MK3
+Built by *?? \*Unsure maybeee frosty?\**
+ - Base: probably M16 MK3
  - Visor style: looks like M16 MK3 default
  - Display: 8x8 LED Matrix (MAX7219) single color
  - Electronic: Unknown, software: unknown
@@ -126,15 +126,39 @@ Built by ??
 ### [Kimmix](https://x.com/kimmix00/)
 ![Kimmix](/assets/img/content/protogen_fursuits/kimmix.jpg)
 
-Very cool protogen! Custom PCB, Custom control software and acceleration & voice reactive and also boop-able. Check out their [Github](https://github.com/Kimmix/KMMX-Fursuit) for plenty technicals detail.
+Very cool protogen! Custom PCB, Custom control software and acceleration & voice reactive and also boop-able. Check out their [GitHub](https://github.com/Kimmix/KMMX-Fursuit) for plenty technicals detail.
 
 Built by Kimmix and [TasP0lar](https://x.com/P0larTas) (PCB)[^6].
  - Base: probably M16 MK3
  - Visor style: probably M16 MK3 default. Visor fabricated by TypeZeroOne[^7]
- - Display: HUB75 Display, with OLED HUD and side-cheeck LED
- - Electronic: Custom ESP32-S3 based board, with proximity sensor, accelerometer and bluetooth connectivity.
+ - Display: HUB75 Display, with OLED HUD and side cheek LED
+ - Electronic: Custom ESP32-S3 based board, with proximity sensor, accelerometer and Bluetooth connectivity.
  Software: Custom with custom bitmap face creation tool, again they're on Github.[^8]
 
+### [Yugita Hoshita](https://www.facebook.com/YugitaHoshita)
+![Yugita Hoshita](/assets/img/content/protogen_fursuits/yugita.jpg)
+
+Also *probably* another M16 MK3. Not a lot of info can be gathered.
+
+Probably built by Yugita Hosita. Visor is from TypeZeroOne [^10], after the failed attempt to vacuum form. [^11]
+ - Base: probably M16 MK3
+ - Visor style: probably M16 MK3 default. Visor fabricated by TypeZeroOne
+ - Display: 8x8 LED Matrix (MAX7218) single color. Side cheek LED
+ - Electronic: Unknown, software: unknown
+
+---
+
+## Wording & Notices
+"probably" = 90%
+"maybe" = 5%
+
+**ALSO!** I actually got to take a picture with one of the proot here! 
+
+I'll probably keep this updated up to 10 of them. Starting to become less sparse than I thought.
+
+> "Like a newborn proto, it just happens every day."
+>
+> \- Not The Rolling Stone
 
 [^1]: Edited at 30-05-2026 (dd/MM/yyyy). I think Nikowari is the actual owner.
 [^2]: <https://www.furaffinity.net/view/52226449/>
@@ -144,3 +168,6 @@ Built by Kimmix and [TasP0lar](https://x.com/P0larTas) (PCB)[^6].
 [^6]: <https://x.com/kimmix00/status/1717981851267338535>
 [^7]: Author comment <https://www.facebook.com/photo.php?fbid=810328868701665>
 [^8]: Like a lot of technical details on Github <https://github.com/Kimmix/KMMX-Fursuit>
+[^9]: https://www.facebook.com/photo/?fbid=122107744173334185&set=ecnf.61590025551311
+[^10]: Author comment <https://www.facebook.com/photo/?fbid=122120239155101064>
+[^11]: <https://www.facebook.com/photo/?fbid=122113427943101064>

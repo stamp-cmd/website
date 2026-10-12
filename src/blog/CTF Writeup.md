@@ -35,9 +35,9 @@ uuwUuwWUuuwWwWUuuwwUuuuwuwuWuUWUwUwUuWUWuWwUuWUUuWuwuWuuwWWUwUuuuUuuuWwWuUUu
 [Recipe](https://gchq.github.io/CyberChef/#recipe=To_Hex('None',0)Find_/_Replace(%7B'option':'Regex','string':'5'%7D,'1',true,false,true,false)Find_/_Replace(%7B'option':'Simple%20string','string':'7'%7D,'0',true,false,true,false)From_Binary('None',8))
 
 #### Observation
-There are only 4 possible characters inside encoded string 'u', 'U', 'w', 'W'. If you look at the [ASCII table](https://commons.wikimedia.org/wiki/File:ASCII-Table-wide.svg) of these character.
+There are only 4 possible characters inside encoded string 'u', 'U', 'w', 'W'. If you look at the [ASCII table](https://commons.wikimedia.org/wiki/File:ASCII-Table-wide.svg) of these characters.
 
-Another observation that can be done is, maybe capitalization is encoding something. That's isn't how I came up with it, but it still works.
+Another observation that can be done is, maybe capitalization is encoding something. That isn't how I came up with it, but it still works.
 
 | Hex | Char |
 | --- | ---- |
@@ -56,4 +56,4 @@ SKR-CTF{3ncode+5ub}
 ```
 *(Flag content might look odd, but that's normal.)*
 
-Also obligatory Soatok (Cryptogra-fur) mention: [How To Learn Cryptography as a Programmer](https://soatok.blog/2020/06/10/how-to-learn-cryptography-as-a-programmer/).
+Also, obligatory Soatok (Cryptogra-fur) mention: [How To Learn Cryptography as a Programmer](https://soatok.blog/2020/06/10/how-to-learn-cryptography-as-a-programmer/).

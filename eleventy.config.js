@@ -6,12 +6,15 @@ import markdownit from "markdown-it";
 import markfootnote from "markdown-it-footnote";
 import markabbrev from "markdown-it-abbr";
 import markanchor from "markdown-it-anchor";
+import { rssPlugin, getFeedTemplate } from "@11ty/eleventy-plugin-rss";
+
+const SITE_URL = "https://styrene.neocities.org/";
 
 export default async function(eleventyConfig) {
     eleventyConfig.setInputDirectory("src");
     eleventyConfig.setLayoutsDirectory("_layouts");
     
-    eleventyConfig.setTemplateFormats("liquid,md,webc");
+    eleventyConfig.setTemplateFormats("liquid,md,webc,njk");
 
     eleventyConfig.addPassthroughCopy("src/robots.txt")
     // neocities deployment
@@ -24,10 +27,12 @@ export default async function(eleventyConfig) {
     eleventyConfig.ignores.add("src/proj.md");
 
     // in-case of neocities deployment
+    eleventyConfig.addGlobalData("site_url", SITE_URL);
     eleventyConfig.addGlobalData("vid_dir", "https://github.com/stamp-cmd/website/raw/refs/heads/main/assets/vid/"); // use github as video storage
     eleventyConfig.addGlobalData("full_url", "https://raw.githubusercontent.com/stamp-cmd/website/refs/heads/main/");
 
     eleventyConfig.addPlugin(RenderPlugin);
+    eleventyConfig.addPlugin(rssPlugin);
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(pluginWebc, { components: "src/_components/*.webc" });
 
@@ -37,6 +42,10 @@ export default async function(eleventyConfig) {
 
     eleventyConfig.addFilter("machineDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
+    })
+
+    eleventyConfig.addFilter("isoDate", (dateObj) => {
+        return DateTime.fromJSDate(dateObj).toISO();
     })
 
     let md = markdownit();
@@ -59,7 +68,23 @@ export default async function(eleventyConfig) {
 
     md.renderer.rules.footnote_block_close = () => { return "</ol>\n</div>\n"; }
 
+    let default_img = md.renderer.rules.image;
+    md.renderer.rules.image = (token, idx, options, env, self) => {
+        token[idx].attrSet("loading", "lazy");
+        return default_img(token, idx, options, env, self);
+    }
+
     eleventyConfig.setLibrary("md", md);
 
-    eleventyConfig.addWatchTarget("CHANGELOG.md")
+    eleventyConfig.addWatchTarget("CHANGELOG.md");
+
+    let { content, data } = getFeedTemplate({
+		type: "atom",
+		collection: {
+			name: "posts",
+			limit: 10,
+		}
+	});
+
+    eleventyConfig.addTemplate("src/rss.njk", content, data);
 }

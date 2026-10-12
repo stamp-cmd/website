@@ -1,7 +1,8 @@
 @import url("highlight.css");
 
 body {
-    background-size: contain; /* ? weird bug */
+    background-size: cover; /* ? weird bug */
+    height: 100vh;
 }
 
 h1 {
@@ -67,3 +68,9 @@ td, th {
 }
 
 p > strong { overflow-wrap: anywhere; }
+
+blockquote {
+    padding: 2px;
+    background-color: #24273a;
+    border-left: 4px solid var(--peach);
+}

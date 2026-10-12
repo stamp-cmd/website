@@ -14,17 +14,17 @@ permalink: "/blog/school-management.html"
 
 Original article was written over 2 years ago. These vulnerabilities have been reported. And (some) actions have been taken. Latest app is built on [Flutter](https://flutter.dev/) now.
 
-Also I am not the first one who've discovered this. And for the final touch, educational purposes only. Some part might be replicable, some might not.
+Also, I am not the first one who've discovered this. And for the final touch, educational purposes only. Some part might be replicable, some might not.
 
 Actual rewrite date is 30th May 2026.
 
 ## App Overview
 
-DSchool is a school services management app for student ID, attendance, **RFID card transaction records**, RFID cardcurrent balance *(it would be bad if the app is hackable, wouldn't it)*, notes of leaves and etc.
+DSchool is a school services management app for student ID, attendance, **RFID card transaction records**, RFID card's current balance *(it would be bad if the app is hackable, wouldn't it)*, notes of leaves etc.
 
-It also have on-site face recognition software to check student attendance. *yeahh..*
+It also has on-site face recognition software to check student attendance. *yeahh..*
 
-### Registeration
+### Registration
 
 User enter their role (student / parent / teacher), their school name, **their identification number** and create **their own 6-digit pin**.
 
@@ -43,9 +43,9 @@ Archived APK:
 
 My go-to decompiler is [JADX](https://github.com/skylot/jadx). But in this case [Apktool](https://apktool.org/) is viable too *(or even zip extractor)*.
 
-After decompiling, looking thru generated files. There is `org.nativescript` folder. Indicating that this app was built with Javascript framework, [NativeScript](https://nativescript.org/).
+After decompiling, looking through generated files. There is `org.nativescript` folder. Indicating that this app was built with Javascript framework, [NativeScript](https://nativescript.org/).
 
-After looking more, the `assets` folder stucks out. As it contains Javascript files with comments. We might have just found original source code of the app!
+After looking more, the `assets` folder stuck out. As it contains Javascript files with comments. We might have just found original source code of the app!
 
 And once again, there is `tns_modules` which indicates a NativeScript project.
 
@@ -63,7 +63,7 @@ I used Regex to extract URLs from source code folder.
 
 ### (Modified) Source code snippets
 
-Code snippets is aimed at highlighting logic, with glue code to receive input from UI. Even though snippets might seem valid, variables are not fully defined.
+Code snippets are aimed at highlighting logic, with glue code to receive input from UI. Even though snippets might seem valid, variables are not fully defined.
 
 #### Sidebar
 
@@ -400,7 +400,7 @@ We have figured out all variables used to get to here. Now let's go to the next 
 
 After we've finished extensively reverse engineer the logic. What can we do with it?
 
-Well, simplest one is changing your role from student to parent / teacher / manager. It allows you to access UI panel of that role[^2]. Although it's a bit wonky.
+Well, the simplest one is changing your role from student to parent / teacher / manager. It allows you to access UI panel of that role[^2]. Although it's a bit wonky.
 
 We had obtained IP address of the DSchool website, maybe we could do some port scanning?
 
@@ -497,13 +497,14 @@ What data does it store?
  - Identification number
  - RFID card number
  - Current balance
- - Student's behavioural score
- - Many more... *(there's a lot of school services after all)*
+ - Student's behavioral score
+ - Many more... *(there are a lot of school services after all)*
 
 ## Step 4: Profit??
 
 *[XSS]: Cross-Site Scripting
 ### Vulnerability list found so far
+
  - SQL injection (from `school_service2/get_catstudent3.php`)
  - Client-side authentication (from `dschool_app_login/index.php`)
  - Insecure direct object reference (from `ios/dschool_re.php` `app` parameter)
@@ -513,11 +514,11 @@ There's also open RDP port, which I'm not qualify in this sector to tell you any
 
 ### Input sanitization / Parameterized query
 
-Input sanitization stop SQL injection from happening, by escaping special characters that can be intrepret as SQL Query. 
+Input sanitization stop SQL injection from happening, by escaping special characters that can be interpreted as SQL Query. 
 
-[Paramterized query](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html) uses placeholder to insert value instead of manipulating query string directly, preventing injection.
+[Parameterized query](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html) uses placeholder to insert value instead of manipulating query string directly, preventing injection.
 
-There's also [stackoverflow thread about this](https://stackoverflow.com/questions/60174/how-can-i-prevent-sql-injection-in-php).
+There's also [Stack Overflow thread about this](https://stackoverflow.com/questions/60174/how-can-i-prevent-sql-injection-in-php).
 
 ### Client-Side authentication
 
@@ -527,7 +528,7 @@ DON'T! Just use backend. *(There's also weakness enumeration: [CWE-603](https://
 
 ## PostScript / Rant
 
-Y'know I'll take this, any day than Canva's site AI Slop. Canva generated sites are used in facility somewhat regularly to store students data *(not as much as DSchool but still)*.
+Y'know I'll take this, any day than Canva's site AI Slop. Canva generated sites are used in facility somewhat regularly to store students' data *(not as much as DSchool but still)*.
 Most people who use this tool don't know anything about security, so they don't know that this is a problem. And students trust the websites to be secure enough to enter their personal information there *(if they even have a choice to)*.
 
 It does not take long to breach these. Longest time I took to breach Canva website is 30 mins. It's usually same mistake, Client-side authentication. In one case, it decided to put admin email and password in a function??

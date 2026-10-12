@@ -48,16 +48,24 @@
                         <badge src="/assets/img/buttons/keeri.gif" title="very nice looking website" alt="keerifox" href="https://keeri.place/"></badge>
                         <badge src="/assets/img/buttons/dark.png" title="fellow tech protos" alt="dark" href="https://dark.ski/"></badge>
                         <badge src="/assets/img/buttons/resonite.png" title="support pdf out of the box, hell yeah" alt="resonite" href="https://resonite.com/"></badge>
-                        <badge src="/assets/img/buttons/vscode.png" title="i perfer vscode for web dev" alt="MADE WITH VISUAL STUDIO CODE"></badge>
+                        <badge src="/assets/img/buttons/vscode.png" title="i prefer vscode for web dev" alt="MADE WITH VISUAL STUDIO CODE"></badge>
                         <badge src="/assets/img/buttons/beeps.gif" title="beeps" alt="beeps" href="https://beeps.website/"></badge>
                         <badge src="/assets/img/buttons/pg.gif" title="PG for now" alt="Web PG" href="http://www.mabsland.com/"></badge>
-                        <badge src="/assets/img/buttons/html5.png" title="HTML5 Validated!" alt="W3C HTML5"></badge>
+                    {% endrenderTemplate %}
+                        <a href="https://validator.w3.org/nu/?doc={{ site_url |  url_encode }}" target="_blank">
+                            <img src="/assets/img/buttons/html5.png" title="HTML5 Validated!" alt="W3C HTML5" class="no-modal">
+                        </a>
+                    {% renderTemplate "webc" %}
                         <badge src="/assets/img/buttons/hiijax.gif" title="very nice website, gave me starting point for this one" alt="HiiJax" href="https://hiijax.net/"></badge>
-                        <badge src="/assets/img/buttons/cozmo.png" title="Tech Kat, very cool art!" alt="tizzle.tech" href="https://tizzle.tech/"></badge>
+                        <badge src="/assets/img/buttons/cozmo.png" title="Tech Kat, furry fine arts" alt="tizzle.tech" href="https://tizzle.tech/"></badge>
                     {% endrenderTemplate %}
                 </div>
             </footer>
-            <p>Website repository: <a href="https://github.com/stamp-cmd/website" target="_blank">stamp-cmd/website</a></p>
+            <p>
+                Website repository: <a href="https://github.com/stamp-cmd/website" target="_blank">stamp-cmd/website</a>
+                RSS: <a href="/rss.xml" target="_blank">rss.xml</a>
+                Sitemap: <a href="/sitemap.xml" target="_blank">sitemap.xml</a>
+            </p>
             <u id="uwu">w</u>
         </div>
         {% if code %}

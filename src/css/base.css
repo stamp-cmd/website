@@ -1,6 +1,7 @@
 body {
     background-image: url("/assets/img/dieshot90.jpg");
     background-size: cover;
+    height: 100vh;
     margin: 14px;
 }
 
@@ -176,4 +177,13 @@ footer > div > img { width: 88px; height: 31px; }
 #uwu {
     font-family: "0xProto";
     color: var(--text);
+}
+
+span.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    filter: invert() brightness(88%) hue-rotate(226deg) saturate(64%);
 }
