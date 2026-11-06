@@ -25,6 +25,7 @@ export default async function(eleventyConfig) {
     eleventyConfig.addWatchTarget("src/js");
 
     eleventyConfig.ignores.add("src/proj.md");
+    eleventyConfig.ignores.add("src/nowo.md");
 
     // in-case of neocities deployment
     eleventyConfig.addGlobalData("site_url", SITE_URL);

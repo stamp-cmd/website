@@ -154,8 +154,8 @@ footer > div > img { width: 88px; height: 31px; }
 }
 
 #img-modal > img {
-    width: fit-content;
-    height: fit-content;
+    height: auto;
+    width: auto;
 }
 
 #img-modal > button {
@@ -186,4 +186,9 @@ span.icon {
     background-repeat: no-repeat;
     margin-right: 10px;
     filter: invert() brightness(88%) hue-rotate(226deg) saturate(64%);
+}
+
+#divider { border-right: 2px solid var(--subtext); }
+.no-but {
+    align-self: center;
 }

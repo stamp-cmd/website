@@ -115,3 +115,7 @@ time > i {
 }
 
 li { list-style: "- "; }
+
+#preface {
+    text-indent: 16px;
+}

@@ -82,7 +82,7 @@ Built by TypeZeroOne (base & electronics at least)
 ### [Sanyo](https://www.facebook.com/prasertporn.changjai)
 ![Sanyo](/assets/img/content/protogen_fursuits/sanyo.jpg)
 
-Probably M16 MK3, Not much to comment on construction.
+Probably M16 MK3. Now voice reactive[^12]!
 
 Built by ??
  - Base: probably M16 MK3
@@ -93,7 +93,7 @@ Built by ??
 ### [Vortex](https://guestdaprotogen.rf.gd)
 ![Vortex](/assets/img/content/protogen_fursuits/vortex.jpg)
 
-Currently un-visored protogen, custom PCB and software!
+~~Currently un-~~(kind of) visored protogen, custom PCB and software!
 
 Built by [Guest](https://x.com/GuestDaProtogen).
  - Base: probably M16 MK3
@@ -171,3 +171,4 @@ I'll probably keep this updated up to 10 of them. Starting to become less sparse
 [^9]: <https://www.facebook.com/photo/?fbid=122107744173334185&set=ecnf.61590025551311>
 [^10]: Author comment <https://www.facebook.com/photo/?fbid=122120239155101064>
 [^11]: <https://www.facebook.com/photo/?fbid=122113427943101064>
+[^12]: <https://www.tiktok.com/@minty5961/video/7700203547119471892>

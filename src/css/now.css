@@ -1,0 +1,18 @@
+.block > div {
+    width: 100%;
+    margin: 0 20px 0;
+}
+
+.block > div > p {
+    margin: 0.125em 0 0.125em;
+}
+
+h2, h3, h4 {
+    color: var(--text);
+    text-indent: 10px;
+}
+
+li {
+    color: var(--text);
+    list-style: "- ";
+}

@@ -43,15 +43,30 @@ h2 > a {
 }
 
 #gallery {
-    display: grid;
+    --count: 1;
+    column-count: var(--count);
+    column-gap: 12px;
+    padding-bottom: 16px;
     width: 100%;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
-    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    #gallery { --count: 2; }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    #gallery { --count: 3; }
+}
+
+@media screen and (min-width: 800px) {
+    #gallery { --count: 4; }
 }
 
 #gallery > img {
+    display: block;
+    break-inside: avoid;
     border: 2px solid #94e2d5;
+    margin-bottom: 10px;
     width: 100%;
 }
 
@@ -61,4 +76,27 @@ h2 > a {
 
 #lastfm {
     background-image: url("/assets/img/icons/lastfm.svg");
+    width: 1.5em;
+    height: 1.5em;
+    margin-bottom: -8px;
 }
+
+.cover-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 250px;
+    max-height: 250px;
+    margin: 0px 16px 16px 8px;
+}
+
+.cover-grid > img {
+    width: 100%;
+}
+
+blockquote {
+    padding: 2px;
+    background-color: #24273a;
+    border-left: 4px solid var(--peach);
+}
+
+blockquote > p { margin-left: 10px; }
