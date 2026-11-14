@@ -33,8 +33,8 @@ Last updated: {{ page.date | postDate }}
 ### Math
 *[CS]: Computer Science
 - Discrete Mathematics, preparing for university CS course. Currently just graph theory.
-- High school math, since I'm not leaving yet
+- High school math, since I'm not leaving yet.
 
 ## Attending (furry) conventions
 
-- [BangkokBeast](https://alpha.bangkokbeasts.com/), I'm going alone *(unfortunately)*
+- [BangkokBeast](https://alpha.bangkokbeasts.com/), I'm going alone *(unfortunately)* (Attended. It was very fun, since it's my first actual furry con. Met a lot of protogens. And I bought a bunch of stickers!)

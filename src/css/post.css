@@ -12,7 +12,7 @@ h1 {
     line-height: 1.75rem;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
     color: var(--text);
     text-indent: 10px;
 }

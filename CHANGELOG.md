@@ -1,3 +1,12 @@
+2026-11-14
+#### I went to a furry convention!
+I went to [BangkokBeast](https://bangkokbeasts.com/2026/) and met 8 protogen fursuiters (All except Potato and Sushi)
+
+So the protogen registry is updated, a lot. And I cite image sources now, I've should've done that since start but I forgor.
+Some images are from BKB event!
+
+---
+
 2026-11-1
 #### \[feat.\]: Minor changes
 - **Image gallery now use masonry layout!**
@@ -6,6 +15,8 @@
 - Added more artist to media entry
 - Updated image modal code
 - More...
+
+---
 
 2026-10-12
 #### See? It's not abandoned.

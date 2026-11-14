@@ -53,6 +53,8 @@ Last updated: {{ page.date | postDate }}
 ### [Potato](https://x.com/Rusul1624)[^1]
 ![Potato the protogen](/assets/img/content/protogen_fursuits/potato.jpg)
 
+##### Image Source: <https://www.furaffinity.net/view/52226449/>
+
 So-called very first Thailand protogen, and it's a really cool one (electronic wise).
 
 Built by [MangMuang Elektronik](https://x.com/MangMuang) (electronics), and [Yuzubu Furmaker & Clinic](https://x.com/YUZUBU_Furmaker) (fur & fabric).
@@ -65,44 +67,51 @@ Built by [MangMuang Elektronik](https://x.com/MangMuang) (electronics), and [Yuz
  - Display: HUB75 display, with side cheek plate addressable LED
  - Electronics: ESP32 & Intel Stratix FPGA! With audio processing, Wifi & Bluetooth connectivity, and OTA update. Custom ([Protogen Smart Core](https://github.com/MangMuang/ProtogenSmartCore/))software[^2].
 
-### [TypeZeroOne](https://www.facebook.com/typezeroone)
+### [TypeZeroOne](https://www.facebook.com/profile.php?id=61596379568673)
 ![TypeZeroOne](/assets/img/content/protogen_fursuits/typezeroone.jpg)
+
+##### Image Source: <https://www.facebook.com/photo.php?fbid=122219746556052239>
 
 Based on M16 MK3, 3D printed and vacuum formed using DIY Vacuum former[^3].
 
 Built by TypeZeroOne (base & electronics at least)
  - Base: M16 MK3
  - Visor style: M16 MK3 default
- - Display: 8x8 LED Matrix (MAX7218), sometimes two colors
+ - Display: 8x8 LED Matrix (MAX7218), two colors
  - Electronic: possibly Arduino pro mini board[^4], software unknown.
 
 > #### NOT A SPONSORSHIP!
-> TypeZeroOne is considering selling protogen kit on Facebook. *(TypeZeroOne may have done commission before, but I can't confidently prove it)*
+> TypeZeroOne is considering selling protogen kit on Facebook. (From various fursuiter, It might be possible to buy the visor from him).
 
-### [Sanyo](https://www.facebook.com/prasertporn.changjai)
-![Sanyo](/assets/img/content/protogen_fursuits/sanyo.jpg)
+### [Minty](https://www.facebook.com/prasertporn.changjai)
+![Minty](/assets/img/content/protogen_fursuits/minty.jpg)
 
+##### Image Source: <https://www.facebook.com/photo/?fbid=122239816292052239>
 Probably M16 MK3. Now voice reactive[^12]!
 
 Built by ??
  - Base: probably M16 MK3
  - Visor style: looks like M16 MK3 default
- - Display: 8x8 LED Matrix (MAX7219) single color
- - Electronic: Unknown, software unknown
+ - Display: 8x8 LED Matrix (MAX7219) 2 colors (red and blue)
+ - Electronic: Microphone for voice reaction *(maybe)*, software unknown
 
 ### [Vortex](https://guestdaprotogen.rf.gd)
 ![Vortex](/assets/img/content/protogen_fursuits/vortex.jpg)
 
-~~Currently un-~~(kind of) visored protogen, custom PCB and software!
+##### Image Source: <https://www.facebook.com/photo/?fbid=122126258199403271>
+
+~~Currently un-~~(kind of) visored protogen, custom PCB and software! The visor is from combination of car tint and plastic sheets.
 
 Built by [Guest](https://x.com/GuestDaProtogen).
  - Base: probably M16 MK3
- - Visor style: ~~doesn't exist yet, probably will be M16 MK3 default~~ Visor is currently made of thin tinted plastic sheet *(probably)* [^9]
+ - Visor style: ~~doesn't exist yet, probably will be M16 MK3 default~~ Visor is currently made of thin tinted plastic sheet[^9]
  - Display: 8x8 LED Matrix (MAX7219) single color, with side cheek LEDs
- - Electronic: ESP32, custom PCB[^5] with internal OLED display, custom software.
+ - Electronic: ESP32, custom PCB[^5] with internal OLED display, RGB Sidecheek[^13], Remote-selectable face[^13], custom software.
 
 ### [Theodor](https://www.facebook.com/thn.phl.sud.swath)
 ![Theodor](/assets/img/content/protogen_fursuits/theodor.jpg)
+
+##### Image Source: <https://www.facebook.com/photo.php?fbid=1541297614441869>
 
 This protogen is a really unique one! Custom sawed-off visor. With custom frame, probably made out of foam.
 
@@ -115,17 +124,20 @@ Built by Theodor
 ### [Frosty](https://x.com/FrostDracopyre/)
 ![Frosty](/assets/img/content/protogen_fursuits/frost.jpg)
 
-Probably M16 MK3, Not much to comment on construction
+##### Image Source: <https://www.furtrack.com/p/1820820>
 
-Built by *?? \*Unsure maybeee frosty?\**
+Probably M16 MK3. Features HUB75 display.
+
+Built by *(unsure). However the display controller isn't built by him*
  - Base: probably M16 MK3
  - Visor style: looks like M16 MK3 default
- - Display: 8x8 LED Matrix (MAX7219) single color
- - Electronic: Unknown, software: unknown
+ - Display: HUB75 Display
+ - Electronic: Unknown *(unfortunately)*, software: unknown
 
 ### [Kimmix](https://x.com/kimmix00/)
 ![Kimmix](/assets/img/content/protogen_fursuits/kimmix.jpg)
 
+##### Image Source: <https://x.com/kimmix00/status/2063570795922907379>
 Very cool protogen! Custom PCB, Custom control software and acceleration & voice reactive and also boop-able. Check out their [GitHub](https://github.com/Kimmix/KMMX-Fursuit) for plenty technicals detail.
 
 Built by Kimmix and [TasP0lar](https://x.com/P0larTas) (PCB)[^6].
@@ -138,19 +150,21 @@ Built by Kimmix and [TasP0lar](https://x.com/P0larTas) (PCB)[^6].
 ### [Yugita Hoshita](https://www.facebook.com/YugitaHoshita)
 ![Yugita Hoshita](/assets/img/content/protogen_fursuits/yugita.jpg)
 
-Also *probably* another M16 MK3. Not a lot of info can be gathered.
+##### Image Source: <https://www.facebook.com/photo?fbid=122151533307101064>
+
+Also *probably* another M16 MK3. Features microphone for voice reaction and makeshift display controller remote. Also Boop-able! [^13]
 
 Probably built by Yugita Hosita. Visor is from TypeZeroOne [^10], after the failed attempt to vacuum form. [^11]
  - Base: probably M16 MK3
  - Visor style: probably M16 MK3 default. Visor fabricated by TypeZeroOne
  - Display: 8x8 LED Matrix (MAX7218) single color. Side cheek LED
- - Electronic: Unknown, software: unknown
+ - Electronic: Face is controllable via remote, Voice reactive using microphone, Boop-able, software: unknown
 
 ---
 
 ## Wording & Notices
 "probably" = 90%
-"maybe" = 5%
+"maybe" = 50%
 
 **ALSO!** I actually got to take a picture with one of the proot here! 
 
@@ -172,3 +186,4 @@ I'll probably keep this updated up to 10 of them. Starting to become less sparse
 [^10]: Author comment <https://www.facebook.com/photo/?fbid=122120239155101064>
 [^11]: <https://www.facebook.com/photo/?fbid=122113427943101064>
 [^12]: <https://www.tiktok.com/@minty5961/video/7700203547119471892>
+[^13]: Source: I asked them IRL from [BangkokBeast 2026](https://bangkokbeasts.com/2026/)
