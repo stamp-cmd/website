@@ -84,7 +84,7 @@ Built by TypeZeroOne (base & electronics at least)
 > TypeZeroOne is considering selling protogen kit on Facebook. (From various fursuiter, It might be possible to buy the visor from him).
 
 ### [Minty](https://www.facebook.com/prasertporn.changjai)
-![Minty](/assets/img/content/protogen_fursuits/minty.jpg)
+![Minty @ BKB 2026 - Photographed by TypeZeroOne](/assets/img/content/protogen_fursuits/minty.jpg)
 
 ##### Image Source: <https://www.facebook.com/photo/?fbid=122239816292052239>
 Probably M16 MK3. Now voice reactive[^12]!
@@ -96,20 +96,20 @@ Built by ??
  - Electronic: Microphone for voice reaction *(maybe)*, software unknown
 
 ### [Vortex](https://guestdaprotogen.rf.gd)
-![Vortex](/assets/img/content/protogen_fursuits/vortex.jpg)
+![Vortex @ BKB 2026 - Photographed by Wasabi](/assets/img/content/protogen_fursuits/vortex.jpg)
 
 ##### Image Source: <https://www.facebook.com/photo/?fbid=122126258199403271>
 
-~~Currently un-~~(kind of) visored protogen, custom PCB and software! The visor is from combination of car tint and plastic sheets.
+~~Currently un-~~(kind of) visored protogen, custom PCB and software! The visor is from combination of car tint and plastic sheets.[^13]
 
 Built by [Guest](https://x.com/GuestDaProtogen).
  - Base: probably M16 MK3
- - Visor style: ~~doesn't exist yet, probably will be M16 MK3 default~~ Visor is currently made of thin tinted plastic sheet[^9]
+ - Visor style: ~~doesn't exist yet, probably will be M16 MK3 default~~ Visor is currently made of thin tinted plastic sheet.
  - Display: 8x8 LED Matrix (MAX7219) single color, with side cheek LEDs
  - Electronic: ESP32, custom PCB[^5] with internal OLED display, RGB Sidecheek[^13], Remote-selectable face[^13], custom software.
 
 ### [Theodor](https://www.facebook.com/thn.phl.sud.swath)
-![Theodor](/assets/img/content/protogen_fursuits/theodor.jpg)
+![Theodor @ TACRA](/assets/img/content/protogen_fursuits/theodor.jpg)
 
 ##### Image Source: <https://www.facebook.com/photo.php?fbid=1541297614441869>
 
@@ -122,7 +122,7 @@ Built by Theodor
  - Electronic: Unknown, software unknown
 
 ### [Frosty](https://x.com/FrostDracopyre/)
-![Frosty](/assets/img/content/protogen_fursuits/frost.jpg)
+![Frosty @ Thaitails 2026](/assets/img/content/protogen_fursuits/frost.jpg)
 
 ##### Image Source: <https://www.furtrack.com/p/1820820>
 
@@ -148,7 +148,7 @@ Built by Kimmix and [TasP0lar](https://x.com/P0larTas) (PCB)[^6].
  Software: Custom with custom bitmap face creation tool, again they're on Github.[^8]
 
 ### [Yugita Hoshita](https://www.facebook.com/YugitaHoshita)
-![Yugita Hoshita](/assets/img/content/protogen_fursuits/yugita.jpg)
+![Yugita Hoshita @ BKB - Photographed by Theodor](/assets/img/content/protogen_fursuits/yugita.jpg)
 
 ##### Image Source: <https://www.facebook.com/photo?fbid=122151533307101064>
 

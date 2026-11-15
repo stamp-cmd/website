@@ -72,6 +72,7 @@ export default async function(eleventyConfig) {
     let default_img = md.renderer.rules.image;
     md.renderer.rules.image = (token, idx, options, env, self) => {
         token[idx].attrSet("loading", "lazy");
+        token[idx].attrSet("title", token[idx].content);
         return default_img(token, idx, options, env, self);
     }
 
